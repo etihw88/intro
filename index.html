@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>백승리 프로필 | 전문 교육강사</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -16,19 +15,31 @@
       --secondary: #f3f4f6;
       --accent: #3b82f6;
     }
-    .video-container iframe {
+    .responsive-iframe {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .responsive-iframe iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      border: 0;
     }
   </style>
 </head>
 <body class="bg-[var(--secondary)] text-gray-800">
   <div class="max-w-6xl mx-auto px-6 py-10">
     <!-- 상단: 소개 + 영상 -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 mb-12">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
       <!-- 소개 -->
-      <div class="bg-white p-6 rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none shadow flex flex-col justify-center items-center text-center h-[360px]">
+      <div class="bg-white p-6 rounded-lg shadow flex flex-col justify-center items-center text-center">
         <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250517_173349108.jpg" alt="프로필 사진" class="rounded-full w-32 h-32 mb-4 shadow" />
         <h1 class="text-3xl font-bold text-[var(--primary)] mb-2">백승리</h1>
         <p class="text-lg text-gray-700 mb-3">대상자 중심의 교육을 전문으로 하는 교육강사</p>
@@ -39,20 +50,18 @@
       </div>
 
       <!-- 유튜브 영상 -->
-      <div class="video-container h-[360px] w-full rounded-b-lg lg:rounded-r-lg lg:rounded-bl-none overflow-hidden shadow">
+      <div class="responsive-iframe">
         <iframe
           src="https://www.youtube.com/embed/R5MrF6ryIgo?autoplay=1&mute=1"
           title="소개 영상"
-          frameborder="0"
           allow="autoplay; encrypted-media"
           allowfullscreen
         ></iframe>
       </div>
     </div>
 
-    <!-- 메인 콘텐츠 2단 -->
+    <!-- 콘텐츠 -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-      <!-- 좌측 -->
       <div class="space-y-10">
         <section>
           <h2 class="text-xl font-bold text-[var(--primary)] flex items-center gap-2 mb-3">🎓 학력</h2>
@@ -82,7 +91,6 @@
         </section>
       </div>
 
-      <!-- 우측 -->
       <div class="space-y-10">
         <section>
           <h2 class="text-xl font-bold text-[var(--primary)] flex items-center gap-2 mb-3">💼 경력</h2>
@@ -126,6 +134,7 @@
   </div>
 </body>
 </html>
+
 
 
 
