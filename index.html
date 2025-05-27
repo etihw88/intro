@@ -16,6 +16,11 @@
       --secondary: #f3f4f6;
       --accent: #3b82f6;
     }
+    .video-container iframe {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   </style>
 </head>
 <body class="bg-[var(--secondary)] text-gray-800">
@@ -23,7 +28,7 @@
     <!-- 상단: 소개 + 영상 -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 mb-12">
       <!-- 소개 -->
-      <div class="bg-white p-6 rounded-l-lg shadow flex flex-col justify-center items-center text-center h-[360px]">
+      <div class="bg-white p-6 rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none shadow flex flex-col justify-center items-center text-center h-[360px]">
         <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250517_173349108.jpg" alt="프로필 사진" class="rounded-full w-32 h-32 mb-4 shadow" />
         <h1 class="text-3xl font-bold text-[var(--primary)] mb-2">백승리</h1>
         <p class="text-lg text-gray-700 mb-3">대상자 중심의 교육을 전문으로 하는 교육강사</p>
@@ -33,10 +38,9 @@
         </a>
       </div>
 
-      <!-- 영상 -->
-      <div class="h-[360px] w-full rounded-r-lg overflow-hidden shadow">
+      <!-- 유튜브 영상 -->
+      <div class="video-container h-[360px] w-full rounded-b-lg lg:rounded-r-lg lg:rounded-bl-none overflow-hidden shadow">
         <iframe
-          class="w-full h-full"
           src="https://www.youtube.com/embed/R5MrF6ryIgo?autoplay=1&mute=1"
           title="소개 영상"
           frameborder="0"
@@ -50,7 +54,6 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
       <!-- 좌측 -->
       <div class="space-y-10">
-        <!-- 학력 -->
         <section>
           <h2 class="text-xl font-bold text-[var(--primary)] flex items-center gap-2 mb-3">🎓 학력</h2>
           <ul class="list-disc list-inside space-y-1 text-gray-800">
@@ -60,8 +63,6 @@
             <li>상지대학교 사회복지학석사</li>
           </ul>
         </section>
-
-        <!-- 자격 -->
         <section>
           <h2 class="text-xl font-bold text-[var(--primary)] flex items-center gap-2 mb-3">🏅 자격 및 면허</h2>
           <ul class="list-disc list-inside space-y-1 text-gray-800">
@@ -83,7 +84,6 @@
 
       <!-- 우측 -->
       <div class="space-y-10">
-        <!-- 경력 -->
         <section>
           <h2 class="text-xl font-bold text-[var(--primary)] flex items-center gap-2 mb-3">💼 경력</h2>
           <ul class="list-disc list-inside space-y-1 text-gray-800">
@@ -93,8 +93,6 @@
             <li>무실간호학원 강사</li>
           </ul>
         </section>
-
-        <!-- 포트폴리오 -->
         <section>
           <h2 class="text-xl font-bold text-[var(--primary)] flex items-center gap-2 mb-3">🧑‍🏫 강의 포트폴리오</h2>
           <ul class="list-disc list-inside space-y-1 text-gray-800">
@@ -128,6 +126,7 @@
   </div>
 </body>
 </html>
+
 
 
 
