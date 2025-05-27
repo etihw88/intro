@@ -33,10 +33,10 @@
         </a>
       </div>
 
-      <!-- 유튜브 영상: 상하 꽉 채우고 좌우 일부 잘림 -->
-      <div class="w-full h-[400px] sm:h-[500px] bg-black rounded-lg overflow-hidden shadow-md relative">
+      <!-- 유튜브 영상 (원본 비율 유지) -->
+      <div class="w-full aspect-video bg-black rounded-lg overflow-hidden shadow-md">
         <iframe
-          class="absolute top-0 left-0 w-[177.78%] h-full -translate-x-[21.39%]"
+          class="w-full h-full"
           src="https://www.youtube.com/embed/R5MrF6ryIgo?autoplay=1&mute=1"
           title="AI 교육 영상"
           frameborder="0"
@@ -75,8 +75,7 @@
             <li>사회복지사 2급</li>
             <li>일반행정사</li>
             <li>채용면접관</li>
-            <li>
-              직업능력개발훈련교사<br />
+            <li>직업능력개발훈련교사<br />
               <span class="ml-4 text-sm text-gray-600">(보건지원, 의료, 산업보건)</span>
             </li>
             <li>평생교육사 2급</li>
@@ -113,7 +112,7 @@
       </div>
     </div>
 
-    <!-- 연락처 + 강의사진 -->
+    <!-- 연락처 + 강의 사진 -->
     <section class="mt-14 bg-white p-6 rounded-lg shadow grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
       <div>
         <h2 class="text-xl font-bold text-[var(--primary)] mb-4 flex items-center gap-2">
@@ -129,13 +128,16 @@
           <span>etihw88@gmail.com</span>
         </div>
       </div>
-      <div class="flex justify-center">
-        <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250527_190649340.jpg" alt="강의 사진" class="rounded-md shadow-md max-w-full h-auto object-cover" />
+
+      <div class="flex flex-col gap-4 justify-center items-center">
+        <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250527_190649340.jpg" alt="강의 사진 1" class="rounded-md shadow-md max-w-full h-auto object-cover" />
+        <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250527_220229502.jpg" alt="강의 사진 2" class="rounded-md shadow-md max-w-full h-auto object-cover" />
       </div>
     </section>
   </div>
 </body>
 </html>
+
 
 
 
