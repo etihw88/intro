@@ -15,30 +15,14 @@
       --secondary: #f3f4f6;
       --accent: #3b82f6;
     }
-    .responsive-iframe {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      border-radius: 0.5rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .responsive-iframe iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
   </style>
 </head>
 <body class="bg-[var(--secondary)] text-gray-800">
   <div class="max-w-6xl mx-auto px-6 py-10">
-    <!-- 상단 소개 + 유튜브 -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-      <div class="bg-white p-6 rounded-lg shadow flex flex-col justify-center items-center text-center">
+    <!-- 소개 + 유튜브 -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 min-h-[400px]">
+      <!-- 소개 -->
+      <div class="bg-white p-6 rounded-lg shadow flex flex-col justify-center items-center text-center h-full">
         <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250517_173349108.jpg" alt="프로필 사진" class="rounded-full w-32 h-32 mb-4 shadow" />
         <h1 class="text-3xl font-bold text-[var(--primary)] mb-2">백승리</h1>
         <p class="text-lg text-gray-700 mb-1">대상자 중심의 교육을</p>
@@ -48,19 +32,25 @@
           강의 문의 (카카오톡 오픈채팅방)
         </a>
       </div>
-      <div class="responsive-iframe">
-        <iframe
-          src="https://www.youtube.com/embed/R5MrF6ryIgo?autoplay=1&mute=1"
-          title="소개 영상"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-        ></iframe>
+
+      <!-- 유튜브 -->
+      <div class="rounded-lg shadow-md overflow-hidden w-full h-full">
+        <div class="w-full h-full relative">
+          <iframe
+            class="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/R5MrF6ryIgo?autoplay=1&mute=1"
+            title="소개 영상"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </div>
 
-    <!-- 학력 / 자격 / 경력 / 포트폴리오 -->
+    <!-- 콘텐츠 -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
       <div class="space-y-10">
+        <!-- 학력 -->
         <section>
           <h2 class="text-xl font-bold text-[var(--primary)] flex items-center gap-2 mb-3">🎓 학력</h2>
           <ul class="list-disc list-inside space-y-1 text-gray-800">
@@ -71,6 +61,7 @@
           </ul>
         </section>
 
+        <!-- 자격 -->
         <section>
           <h2 class="text-xl font-bold text-[var(--primary)] flex items-center gap-2 mb-3">🏅 자격 및 면허</h2>
           <ul class="list-disc list-inside space-y-1 text-gray-800">
@@ -85,8 +76,10 @@
             <li>일반행정사</li>
             <li>채용면접관</li>
             <li>
-              직업능력개발훈련교사<br />
-              <span class="text-sm text-gray-600">(보건지원, 의료, 산업보건)</span>
+              <div class="inline-block">
+                <span>직업능력개발훈련교사</span><br />
+                <span class="text-sm text-gray-600">(보건지원, 의료, 산업보건)</span>
+              </div>
             </li>
             <li>평생교육사 2급</li>
           </ul>
@@ -94,6 +87,7 @@
       </div>
 
       <div class="space-y-10">
+        <!-- 경력 -->
         <section>
           <h2 class="text-xl font-bold text-[var(--primary)] flex items-center gap-2 mb-3">💼 경력</h2>
           <ul class="list-disc list-inside space-y-1 text-gray-800">
@@ -104,6 +98,7 @@
           </ul>
         </section>
 
+        <!-- 포트폴리오 -->
         <section>
           <h2 class="text-xl font-bold text-[var(--primary)] flex items-center gap-2 mb-3">🧑‍🏫 강의 포트폴리오</h2>
           <ul class="list-disc list-inside space-y-1 text-gray-800">
@@ -119,7 +114,7 @@
       </div>
     </div>
 
-    <!-- 연락처 + 강의 이미지 -->
+    <!-- 연락처 + 이미지 -->
     <section class="mt-14 bg-white p-6 rounded-lg shadow grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
       <div>
         <h2 class="text-xl font-bold text-[var(--primary)] flex items-center gap-2 mb-4">
@@ -135,6 +130,8 @@
           <span>etihw88@gmail.com</span>
         </div>
       </div>
+
+      <!-- 강의 사진 -->
       <div class="flex justify-center">
         <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250527_190649340.jpg"
              alt="강의 이미지"
@@ -144,6 +141,7 @@
   </div>
 </body>
 </html>
+
 
 
 
