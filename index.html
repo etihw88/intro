@@ -19,79 +19,99 @@
   <body class="bg-gray-50 text-gray-800">
     <div class="max-w-6xl mx-auto p-6">
       <!-- 소개 + YouTube 영상 -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mb-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch mb-10">
         <!-- 프로필 소개 -->
-        <div class="flex flex-col items-center text-center lg:text-left lg:items-start bg-white p-6 rounded-lg shadow-md">
+        <div class="flex flex-col items-center text-center lg:text-left lg:items-start bg-white p-6 rounded-lg shadow-md justify-center">
           <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250517_173349108.jpg" alt="백승리 프로필 사진" class="rounded-full w-32 h-32 mb-4 shadow-md" />
           <h1 class="text-3xl font-bold text-blue-900 mb-1">백승리</h1>
           <p class="text-lg text-gray-700">대상자 중심의 교육을 전문으로 하는 교육강사</p>
         </div>
 
         <!-- YouTube 영상 -->
-        <div class="aspect-video w-full shadow-md rounded-lg overflow-hidden">
+        <div class="relative aspect-video w-full rounded-lg overflow-hidden shadow-md">
           <iframe
-            src="https://www.youtube.com/embed/0uAKnrDDi80"
+            src="https://www.youtube.com/embed/0uAKnrDDi80?autoplay=1&mute=1"
             title="YouTube video"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="autoplay; encrypted-media"
             allowfullscreen
-            class="w-full h-full"
+            class="absolute top-0 left-0 w-full h-full"
           ></iframe>
         </div>
       </div>
 
       <!-- 학력 -->
       <section class="mb-10">
-        <h2 class="text-xl font-bold text-blue-900 mb-4">학력</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="bg-white p-4 rounded-lg shadow"><p>원주대학 간호과</p></div>
-          <div class="bg-white p-4 rounded-lg shadow"><p>충주대학교 안전공학과</p></div>
-          <div class="bg-white p-4 rounded-lg shadow"><p>연세대학교 보건학석사</p></div>
-          <div class="bg-white p-4 rounded-lg shadow"><p>상지대학교 사회복지학석사</p></div>
-        </div>
+        <h2 class="text-xl font-bold text-blue-900 mb-4 flex items-center gap-2">
+          <svg class="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z M12 14v6" />
+          </svg>
+          학력
+        </h2>
+        <ul class="list-disc list-inside text-gray-800 space-y-1 ml-4">
+          <li>원주대학 간호과</li>
+          <li>충주대학교 안전공학과</li>
+          <li>연세대학교 보건학석사</li>
+          <li>상지대학교 사회복지학석사</li>
+        </ul>
       </section>
 
       <!-- 경력 -->
       <section class="mb-10">
-        <h2 class="text-xl font-bold text-blue-900 mb-4">경력</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="bg-white p-4 rounded-lg shadow"><p>원주시 보건소 근무</p></div>
-          <div class="bg-white p-4 rounded-lg shadow"><p>대원과학대학교 보건학 겸임교수</p></div>
-          <div class="bg-white p-4 rounded-lg shadow"><p>우리마더 요양보호사 교육원 강사</p></div>
-          <div class="bg-white p-4 rounded-lg shadow"><p>무실간호학원 강사</p></div>
-        </div>
+        <h2 class="text-xl font-bold text-blue-900 mb-4 flex items-center gap-2">
+          <svg class="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6h6v6M9 17H6a2 2 0 01-2-2v-5h16v5a2 2 0 01-2 2h-3" />
+          </svg>
+          경력
+        </h2>
+        <ul class="list-disc list-inside text-gray-800 space-y-1 ml-4">
+          <li>원주시 보건소 근무</li>
+          <li>대원과학대학교 보건학 겸임교수</li>
+          <li>우리마더 요양보호사 교육원 강사</li>
+          <li>무실간호학원 강사</li>
+        </ul>
       </section>
 
       <!-- 자격 및 면허 -->
       <section class="mb-10">
-        <h2 class="text-xl font-bold text-blue-900 mb-4">자격 및 면허</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="bg-white p-4 rounded-lg shadow">간호사 면허</div>
-          <div class="bg-white p-4 rounded-lg shadow">보건교사 교원자격증</div>
-          <div class="bg-white p-4 rounded-lg shadow">성폭력 전문상담원</div>
-          <div class="bg-white p-4 rounded-lg shadow">캐나다 아로마테라피스트 (NAHA)</div>
-          <div class="bg-white p-4 rounded-lg shadow">보육교사 1급</div>
-          <div class="bg-white p-4 rounded-lg shadow">요양보호사 1급</div>
-          <div class="bg-white p-4 rounded-lg shadow">MBTI 일반강사</div>
-          <div class="bg-white p-4 rounded-lg shadow">사회복지사 2급</div>
-          <div class="bg-white p-4 rounded-lg shadow">일반행정사</div>
-          <div class="bg-white p-4 rounded-lg shadow">채용면접관</div>
-          <div class="bg-white p-4 rounded-lg shadow">직업능력개발훈련교사(보건/의료/산업보건)</div>
-          <div class="bg-white p-4 rounded-lg shadow">평생교육사 2급</div>
-        </div>
+        <h2 class="text-xl font-bold text-blue-900 mb-4 flex items-center gap-2">
+          <svg class="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+          자격 및 면허
+        </h2>
+        <ul class="list-disc list-inside text-gray-800 space-y-1 ml-4">
+          <li>간호사 면허</li>
+          <li>보건교사 교원자격증</li>
+          <li>성폭력 전문상담원</li>
+          <li>캐나다 아로마테라피스트 (NAHA)</li>
+          <li>보육교사 1급</li>
+          <li>요양보호사 1급</li>
+          <li>MBTI 일반강사</li>
+          <li>사회복지사 2급</li>
+          <li>일반행정사</li>
+          <li>채용면접관</li>
+          <li>직업능력개발훈련교사(보건/의료/산업보건)</li>
+          <li>평생교육사 2급</li>
+        </ul>
       </section>
 
       <!-- 강의 포트폴리오 -->
       <section class="mb-10">
-        <h2 class="text-xl font-bold text-blue-900 mb-4">강의 포트폴리오</h2>
-        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <li class="bg-white p-4 rounded-lg shadow">법정 의무교육</li>
-          <li class="bg-white p-4 rounded-lg shadow">AI활용 및 디지털 문해교육</li>
-          <li class="bg-white p-4 rounded-lg shadow">MBTI교육</li>
-          <li class="bg-white p-4 rounded-lg shadow">웰빙교육</li>
-          <li class="bg-white p-4 rounded-lg shadow">병원동행매니저 교육</li>
-          <li class="bg-white p-4 rounded-lg shadow">생활지원사 교육</li>
-          <li class="bg-white p-4 rounded-lg shadow">요양보호사 보수교육</li>
+        <h2 class="text-xl font-bold text-blue-900 mb-4 flex items-center gap-2">
+          <svg class="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h18M3 10h18M3 16h18" />
+          </svg>
+          강의 포트폴리오
+        </h2>
+        <ul class="list-disc list-inside text-gray-800 space-y-1 ml-4">
+          <li>법정 의무교육</li>
+          <li>AI활용 및 디지털 문해교육</li>
+          <li>MBTI교육</li>
+          <li>웰빙교육</li>
+          <li>병원동행매니저 교육</li>
+          <li>생활지원사 교육</li>
+          <li>요양보호사 보수교육</li>
         </ul>
       </section>
 
@@ -104,6 +124,7 @@
     </div>
   </body>
 </html>
+
 
 
 
