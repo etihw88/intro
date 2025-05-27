@@ -1,88 +1,147 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>백승리 프로필 | 전문 교육강사</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: '#1e3a8a',
-              secondary: '#f3f4f6',
-              accent: '#3b82f6'
-            },
-            fontFamily: {
-              sans: ['Noto Sans KR', 'sans-serif']
-            }
-          }
-        }
-      }
-    </script>
-    <style>
-      body {
-        font-family: 'Noto Sans KR', sans-serif;
-      }
-    </style>
-  </head>
-  <body class="bg-secondary text-gray-800">
-    <div class="max-w-6xl mx-auto p-6">
-      <!-- 소개 + YouTube 영상 -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch mb-10">
-        <!-- 프로필 소개 -->
-        <div class="bg-white p-6 rounded-lg shadow-md flex flex-col justify-center items-center text-center">
-          <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250517_173349108.jpg" alt="백승리 프로필 사진" class="rounded-full w-32 h-32 mb-4 shadow-md" />
-          <h1 class="text-3xl font-bold text-primary mb-1">백승리</h1>
-          <div class="flex flex-col items-center gap-2">
-            <p class="text-lg text-gray-700">
-              대상자 중심의 교육을 전문으로 하는 교육강사
-            </p>
-            <a href="https://open.kakao.com/o/s87PIAyh" target="_blank" class="inline-flex items-center gap-2 text-accent hover:text-primary font-medium">
-              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968940.png" alt="KakaoTalk Icon" class="w-5 h-5" />
-              강의 문의 (카카오톡 오픈채팅방)
-            </a>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>백승리 프로필 | 전문 교육강사</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Noto Sans KR', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <div class="max-w-6xl mx-auto px-6 py-10">
+    <!-- 상단: 프로필 + 영상 -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+      <!-- 프로필 소개 -->
+      <div class="bg-white p-6 rounded-lg shadow flex flex-col items-center text-center">
+        <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250517_173349108.jpg" alt="프로필 사진" class="rounded-full w-32 h-32 mb-4 shadow" />
+        <h1 class="text-3xl font-bold text-blue-900 mb-2">백승리</h1>
+        <p class="text-lg text-gray-700 mb-3">대상자 중심의 교육을 전문으로 하는 교육강사</p>
+        <a href="https://open.kakao.com/o/s87PIAyh" target="_blank" class="inline-flex items-center gap-2 text-blue-700 hover:text-blue-900 font-medium">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111728.png" alt="카카오톡 아이콘" class="w-5 h-5" />
+          강의 문의 (카카오톡 오픈채팅방)
+        </a>
+      </div>
+      <!-- YouTube 영상 -->
+      <div class="aspect-video rounded-lg overflow-hidden shadow">
+        <iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/0uAKnrDDi80?autoplay=1&mute=1"
+          title="소개 영상"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
 
-        <!-- YouTube 영상 -->
-        <div class="aspect-video w-full rounded-lg overflow-hidden shadow-md flex items-center justify-center">
-          <iframe
-            class="w-full h-full"
-            src="https://www.youtube.com/embed/0uAKnrDDi80?autoplay=1&mute=1"
-            title="YouTube video"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
+    <!-- 메인 콘텐츠 2열 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <!-- 좌측 열 -->
+      <div class="space-y-10">
+        <!-- 학력 -->
+        <section>
+          <h2 class="text-xl font-bold text-blue-900 flex items-center gap-2 mb-3">
+            <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5v6" />
+            </svg>
+            학력
+          </h2>
+          <ul class="list-disc list-inside space-y-1 text-gray-800">
+            <li>원주대학 간호과</li>
+            <li>충주대학교 안전공학과</li>
+            <li>연세대학교 보건학석사</li>
+            <li>상지대학교 사회복지학석사</li>
+          </ul>
+        </section>
+
+        <!-- 자격 및 면허 -->
+        <section>
+          <h2 class="text-xl font-bold text-blue-900 flex items-center gap-2 mb-3">
+            <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            자격 및 면허
+          </h2>
+          <ul class="list-disc list-inside space-y-1 text-gray-800">
+            <li>간호사 면허</li>
+            <li>보건교사 교원자격증</li>
+            <li>성폭력 전문상담원</li>
+            <li>캐나다 아로마테라피스트 (NAHA)</li>
+            <li>보육교사 1급</li>
+            <li>요양보호사 1급</li>
+            <li>MBTI 일반강사</li>
+            <li>사회복지사 2급</li>
+            <li>일반행정사</li>
+            <li>채용면접관</li>
+            <li>직업능력개발훈련교사</li>
+            <li>평생교육사 2급</li>
+          </ul>
+        </section>
       </div>
 
-      <!-- 연락처 -->
-      <section class="mt-12 bg-white p-5 rounded-lg shadow">
-        <h2 class="text-xl font-semibold text-primary border-b border-gray-200 pb-2 mb-4">연락처</h2>
-        <div class="flex items-center gap-2 mb-2">
-          <svg class="w-5 h-5 text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor">
-            <path d="M320 0H64C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V64C384 28.7 355.3 0 320 0zM192 480c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32zM320 384H64V64H320V384z"/>
-          </svg>
-          <span>010-5364-2403</span>
-        </div>
-        <div class="flex items-center gap-2">
-          <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18a2 2 0 002-2V6a2 2 0 00-2-2H3a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-          </svg>
-          <span>etihw88@gmail.com</span>
-        </div>
-      </section>
+      <!-- 우측 열 -->
+      <div class="space-y-10">
+        <!-- 경력 -->
+        <section>
+          <h2 class="text-xl font-bold text-blue-900 flex items-center gap-2 mb-3">
+            <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6h6v6H9z" />
+            </svg>
+            경력
+          </h2>
+          <ul class="list-disc list-inside space-y-1 text-gray-800">
+            <li>원주시 보건소 근무</li>
+            <li>대원과학대학교 보건학 겸임교수</li>
+            <li>우리마더 요양보호사 교육원 강사</li>
+            <li>무실간호학원 강사</li>
+          </ul>
+        </section>
+
+        <!-- 강의 포트폴리오 -->
+        <section>
+          <h2 class="text-xl font-bold text-blue-900 flex items-center gap-2 mb-3">
+            <svg class="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h18M3 10h18M3 16h18" />
+            </svg>
+            강의 포트폴리오
+          </h2>
+          <ul class="list-disc list-inside space-y-1 text-gray-800">
+            <li>법정 의무교육</li>
+            <li>AI 활용 및 디지털 문해교육</li>
+            <li>MBTI 교육</li>
+            <li>웰빙교육</li>
+            <li>병원동행매니저 교육</li>
+            <li>생활지원사 교육</li>
+            <li>요양보호사 보수교육</li>
+          </ul>
+        </section>
+      </div>
     </div>
-  </body>
+
+    <!-- 연락처 -->
+    <section class="mt-14 bg-white p-6 rounded-lg shadow">
+      <h2 class="text-xl font-bold text-blue-900 mb-4">연락처</h2>
+      <div class="flex items-center gap-3 mb-2 text-gray-800">
+        <svg class="w-5 h-5 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h2l3.6 7.59a1 1 0 00.87.55h8.28a1 1 0 00.95-.68L21 7H7" />
+        </svg>
+        <span>010-5364-2403</span>
+      </div>
+      <div class="flex items-center gap-3 text-gray-800">
+        <svg class="w-5 h-5 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m0 0l-4-4m4 4l-4 4" />
+        </svg>
+        <span>etihw88@gmail.com</span>
+      </div>
+    </section>
+  </div>
+</body>
 </html>
+
 
 
 
