@@ -19,10 +19,10 @@
 </head>
 <body class="bg-[var(--secondary)] text-gray-800">
   <div class="max-w-6xl mx-auto px-6 py-10">
-    <!-- 소개 + 유튜브 -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-      <!-- 소개 -->
-      <div class="bg-white p-6 rounded-lg shadow flex flex-col justify-center items-center text-center min-h-[400px]">
+    <!-- 소개 + 유튜브 (높이 일치) -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 h-[360px]">
+      <!-- 자기소개 -->
+      <div class="bg-white p-6 rounded-lg shadow flex flex-col justify-center items-center text-center h-full">
         <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250517_173349108.jpg" alt="프로필 사진" class="rounded-full w-32 h-32 mb-4 shadow" />
         <h1 class="text-3xl font-bold text-[var(--primary)] mb-2">백승리</h1>
         <p class="text-lg text-gray-700 mb-1">대상자 중심의 교육을</p>
@@ -33,8 +33,8 @@
         </a>
       </div>
 
-      <!-- 유튜브 영상 (원본 비율 유지) -->
-      <div class="w-full aspect-video bg-black rounded-lg overflow-hidden shadow-md">
+      <!-- 유튜브 -->
+      <div class="w-full h-full bg-black rounded-lg overflow-hidden shadow-md">
         <iframe
           class="w-full h-full"
           src="https://www.youtube.com/embed/R5MrF6ryIgo?autoplay=1&mute=1"
@@ -112,31 +112,36 @@
       </div>
     </div>
 
-    <!-- 연락처 + 강의 사진 -->
-    <section class="mt-14 bg-white p-6 rounded-lg shadow grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-      <div>
-        <h2 class="text-xl font-bold text-[var(--primary)] mb-4 flex items-center gap-2">
-          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="연락 아이콘" class="w-5 h-5" />
-          연락처
-        </h2>
-        <div class="flex items-center gap-3 mb-3 text-gray-800">
-          <img src="https://cdn-icons-png.flaticon.com/512/3059/3059446.png" alt="전화 아이콘" class="w-5 h-5" />
-          <span>010-5364-2403</span>
+    <!-- 연락처 + 이미지 1열 정렬 -->
+    <section class="mt-14 bg-white p-6 rounded-lg shadow">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <!-- 연락처 -->
+        <div class="flex flex-col gap-2 items-start">
+          <h2 class="text-xl font-bold text-[var(--primary)] flex items-center gap-2">
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" class="w-5 h-5" />
+            연락처
+          </h2>
+          <div class="flex items-center gap-2">
+            <img src="https://cdn-icons-png.flaticon.com/512/3059/3059446.png" class="w-5 h-5" />
+            <span>010-5364-2403</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="w-5 h-5" />
+            <span>etihw88@gmail.com</span>
+          </div>
         </div>
-        <div class="flex items-center gap-3 text-gray-800">
-          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="이메일 아이콘" class="w-5 h-5" />
-          <span>etihw88@gmail.com</span>
-        </div>
-      </div>
 
-      <div class="flex flex-col gap-4 justify-center items-center">
-        <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250527_190649340.jpg" alt="강의 사진 1" class="rounded-md shadow-md max-w-full h-auto object-cover" />
-        <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250527_220229502.jpg" alt="강의 사진 2" class="rounded-md shadow-md max-w-full h-auto object-cover" />
+        <!-- 강의 이미지들 -->
+        <div class="flex gap-4">
+          <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250527_190649340.jpg" class="w-40 h-auto rounded shadow-md" />
+          <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250527_220229502.jpg" class="w-40 h-auto rounded shadow-md" />
+        </div>
       </div>
     </section>
   </div>
 </body>
 </html>
+
 
 
 
