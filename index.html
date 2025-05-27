@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>백승리 프로필 | 전문 교육강사</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
@@ -17,22 +17,23 @@
     </style>
   </head>
   <body class="bg-gray-50 text-gray-800">
-    <div class="max-w-5xl mx-auto p-6">
+    <div class="max-w-6xl mx-auto p-6">
       <!-- 소개 + YouTube 영상 -->
-      <div class="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8 mb-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mb-10">
         <!-- 프로필 소개 -->
-        <div class="flex flex-col items-center text-center lg:text-left lg:items-start flex-1">
+        <div class="flex flex-col items-center text-center lg:text-left lg:items-start">
           <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250517_173349108.jpg" alt="백승리 프로필 사진" class="rounded-full w-32 h-32 mb-4 shadow-md" />
           <h1 class="text-3xl font-bold text-blue-900 mb-1">백승리</h1>
           <p class="text-lg text-gray-700">대상자 중심의 교육을 전문으로 하는 교육강사</p>
         </div>
 
         <!-- YouTube 영상 -->
-        <div class="w-full lg:w-[480px] aspect-video rounded-lg overflow-hidden shadow">
+        <div class="aspect-video w-full shadow-md rounded-lg overflow-hidden">
           <iframe
             src="https://www.youtube.com/embed/0uAKnrDDi80"
             title="YouTube video"
             frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
             class="w-full h-full"
           ></iframe>
@@ -41,13 +42,7 @@
 
       <!-- 학력 -->
       <section class="mb-10 bg-white p-5 rounded-lg shadow-sm">
-        <h2 class="text-xl font-semibold text-blue-900 border-b border-gray-200 pb-2 mb-4 flex items-center gap-2">
-          <svg class="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M12 14l9-5-9-5-9 5 9 5z M12 14l6.16-3.422a12.083 12.083 0 01.84 6.154M12 14L5.84 10.578a12.083 12.083 0 00-.84 6.154M12 14v6" />
-          </svg>
-          학력
-        </h2>
+        <h2 class="text-xl font-semibold text-blue-900 border-b border-gray-200 pb-2 mb-4">학력</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <p>원주대학 간호과</p>
           <p>충주대학교 안전공학과</p>
@@ -58,13 +53,7 @@
 
       <!-- 경력 -->
       <section class="mb-10 bg-white p-5 rounded-lg shadow-sm">
-        <h2 class="text-xl font-semibold text-blue-900 border-b border-gray-200 pb-2 mb-4 flex items-center gap-2">
-          <svg class="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M9 17v-6h6v6M9 17H6a2 2 0 01-2-2v-5h16v5a2 2 0 01-2 2h-3" />
-          </svg>
-          경력
-        </h2>
+        <h2 class="text-xl font-semibold text-blue-900 border-b border-gray-200 pb-2 mb-4">경력</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <p>원주시 보건소 근무</p>
           <p>대원과학대학교 보건학 겸임교수</p>
@@ -75,12 +64,7 @@
 
       <!-- 자격 및 면허 -->
       <section class="mb-10 bg-white p-5 rounded-lg shadow-sm">
-        <h2 class="text-xl font-semibold text-blue-900 border-b border-gray-200 pb-2 mb-4 flex items-center gap-2">
-          <svg class="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-          </svg>
-          자격 및 면허
-        </h2>
+        <h2 class="text-xl font-semibold text-blue-900 border-b border-gray-200 pb-2 mb-4">자격 및 면허</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <p>간호사 면허</p>
           <p>보건교사 교원자격증</p>
@@ -99,12 +83,7 @@
 
       <!-- 강의 포트폴리오 -->
       <section class="mb-10 bg-white p-5 rounded-lg shadow-sm">
-        <h2 class="text-xl font-semibold text-blue-900 border-b border-gray-200 pb-2 mb-4 flex items-center gap-2">
-          <svg class="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h18M3 10h18M3 16h18" />
-          </svg>
-          강의 포트폴리오
-        </h2>
+        <h2 class="text-xl font-semibold text-blue-900 border-b border-gray-200 pb-2 mb-4">강의 포트폴리오</h2>
         <ul class="list-disc list-inside text-gray-800 space-y-1">
           <li>법정 의무교육</li>
           <li>AI활용 및 디지털 문해교육</li>
@@ -118,18 +97,13 @@
 
       <!-- 연락처 -->
       <section class="mb-10 bg-white p-5 rounded-lg shadow-sm">
-        <h2 class="text-xl font-semibold text-blue-900 border-b border-gray-200 pb-2 mb-4 flex items-center gap-2">
-          <svg class="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v9a2 2 0 002 2z" />
-          </svg>
-          연락처
-        </h2>
+        <h2 class="text-xl font-semibold text-blue-900 border-b border-gray-200 pb-2 mb-4">연락처</h2>
         <p>전화: 010-5364-2403</p>
         <p>이메일: etihw88@gmail.com</p>
       </section>
     </div>
   </body>
 </html>
+
 
 
