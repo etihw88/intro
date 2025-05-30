@@ -9,17 +9,22 @@
     body {
       font-family: 'Noto Sans KR', sans-serif;
     }
-    .image-fit {
+    .img-box img {
       width: 100%;
-      height: auto;
-      object-fit: contain;
+      height: 250px;
+      object-fit: cover;
+    }
+    @media (min-width: 768px) {
+      .img-box img {
+        height: 300px;
+      }
     }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
   <div class="max-w-6xl mx-auto px-4 py-8 space-y-12">
 
-    <!-- 소개 + 유튜브 -->
+    <!-- 소개 및 유튜브 -->
     <section class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
       <div class="text-center flex flex-col items-center justify-center">
         <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250517_173349108.jpg" alt="프로필" class="rounded-full w-32 h-32 shadow mb-4" />
@@ -68,7 +73,7 @@
             <li>사회복지사 2급</li>
             <li>일반행정사</li>
             <li>채용면접관</li>
-            <li>직업능력개발훈련교사<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(보건지원, 의료, 산업보건)</li>
+            <li>• 직업능력개발훈련교사<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(보건지원, 의료, 산업보건)</li>
             <li>평생교육사 2급</li>
           </ul>
         </div>
@@ -100,35 +105,35 @@
       </div>
     </section>
 
-    <!-- 연락처 + 이미지 -->
-    <section class="w-full">
+    <!-- 연락처 + 이메일 + 이미지 -->
+    <section class="w-full mt-12">
       <h2 class="text-xl font-bold text-blue-900 mb-4 flex items-center gap-2 px-2">
-        📞 연락처
+        📞 연락처 및 이메일
       </h2>
       <div class="mb-2 px-2 text-gray-800 flex items-center gap-2">
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M2.003 5.884l2-3A1 1 0 015 2h10a1 1 0 01.832.445l2 3A1 1 0 0118 7H2a1 1 0 01-.997-1.116z" />
-        </svg>
+        <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email Icon" class="w-5 h-5" />
         <span>etihw88@gmail.com</span>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-0">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-0 img-box">
         <!-- QR -->
         <div class="flex justify-center items-center bg-white">
-          <img src="https://raw.githubusercontent.com/etihw88/intro/main/%EC%A0%9C%EB%AA%A9%EC%9D%84%20%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94_-002.png" alt="QR 코드" class="image-fit max-h-[250px] sm:max-h-[300px] md:max-h-[350px]" />
+          <img src="https://raw.githubusercontent.com/etihw88/intro/main/%EC%A0%9C%EB%AA%A9%EC%9D%84%20%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94_-002.png" alt="QR 코드" />
         </div>
         <!-- 이미지 1 -->
         <div class="flex justify-center items-center bg-white">
-          <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250527_190649340.jpg" alt="강의 이미지1" class="image-fit max-h-[250px] sm:max-h-[300px] md:max-h-[350px]" />
+          <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250527_190649340.jpg" alt="강의 이미지1" />
         </div>
         <!-- 이미지 2 -->
         <div class="flex justify-center items-center bg-white">
-          <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250527_220229502.jpg" alt="강의 이미지2" class="image-fit max-h-[250px] sm:max-h-[300px] md:max-h-[350px]" />
+          <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250527_220229502.jpg" alt="강의 이미지2" />
         </div>
       </div>
     </section>
+
   </div>
 </body>
 </html>
+
 
 
 
