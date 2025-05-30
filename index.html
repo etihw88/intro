@@ -4,64 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>백승리 프로필 | 전문 교육강사</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    :root {
-      --primary: #1e3a8a;
-    }
     body {
       font-family: 'Noto Sans KR', sans-serif;
+    }
+    :root {
+      --primary: #1e3a8a;
     }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
-  <div class="max-w-6xl mx-auto p-6">
-    <!-- 상단 소개 + 유튜브 영상 -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch mb-10">
-      <!-- 소개 -->
+  <div class="max-w-6xl mx-auto p-6 space-y-10">
+
+    <!-- 소개 + 유튜브 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
       <div class="bg-white p-6 rounded-lg shadow-md flex flex-col justify-center text-center">
-        <img
-          src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250517_173349108.jpg"
-          alt="프로필 사진"
-          class="rounded-full w-32 h-32 mx-auto mb-4 shadow-md"
-        />
+        <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250517_173349108.jpg" alt="프로필 사진" class="rounded-full w-32 h-32 mx-auto mb-4 shadow-md" />
         <h1 class="text-3xl font-bold text-[var(--primary)] mb-1">백승리</h1>
         <p class="text-lg text-gray-700">대상자 중심의 교육을</p>
         <p class="text-lg text-gray-700 mb-2">전문으로 하는 교육강사</p>
-        <a
-          href="https://open.kakao.com/o/s87PIAyh"
-          target="_blank"
-          class="inline-flex items-center gap-2 text-blue-700 hover:text-blue-900 font-medium"
-        >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/5968/5968940.png"
-            alt="KakaoTalk Icon"
-            class="w-5 h-5"
-          />
+        <a href="https://open.kakao.com/o/s87PIAyh" target="_blank" class="inline-flex items-center gap-2 text-blue-700 hover:text-blue-900 font-medium">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968940.png" alt="KakaoTalk Icon" class="w-5 h-5" />
           강의 문의 (카카오톡 오픈채팅)
         </a>
       </div>
-
-      <!-- 유튜브 영상 -->
       <div class="relative w-full overflow-hidden rounded-lg shadow-md">
-        <iframe
-          class="w-full h-[230px] sm:h-[280px] md:h-full aspect-video"
-          src="https://www.youtube.com/embed/R5MrF6ryIgo?autoplay=1&mute=1&rel=0"
-          title="YouTube Video"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/R5MrF6ryIgo?autoplay=1&mute=1&rel=0" title="YouTube Video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
 
     <!-- 학력 / 자격 / 경력 / 포트폴리오 -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-      <!-- 좌측 -->
       <div class="space-y-10">
-        <!-- 학력 -->
         <section>
           <h2 class="text-xl font-bold text-[var(--primary)] mb-3">🎓 학력</h2>
           <ul class="list-disc list-inside text-gray-800 space-y-1 ml-4">
@@ -71,8 +47,6 @@
             <li>상지대학교 사회복지학석사</li>
           </ul>
         </section>
-
-        <!-- 자격 -->
         <section>
           <h2 class="text-xl font-bold text-[var(--primary)] mb-3">📑 자격 및 면허</h2>
           <ul class="list-disc list-inside text-gray-800 space-y-1 ml-4">
@@ -86,15 +60,15 @@
             <li>사회복지사 2급</li>
             <li>일반행정사</li>
             <li>채용면접관</li>
-            <li>직업능력개발훈련교사<br /><span class="ml-4 text-sm text-gray-600">(보건지원, 의료, 산업보건)</span></li>
+            <li>
+              직업능력개발훈련교사<br />
+              <span class="ml-4 text-sm text-gray-600">(보건지원, 의료, 산업보건)</span>
+            </li>
             <li>평생교육사 2급</li>
           </ul>
         </section>
       </div>
-
-      <!-- 우측 -->
       <div class="space-y-10">
-        <!-- 경력 -->
         <section>
           <h2 class="text-xl font-bold text-[var(--primary)] mb-3">💼 경력</h2>
           <ul class="list-disc list-inside text-gray-800 space-y-1 ml-4">
@@ -105,8 +79,6 @@
             <li>현) 무실간호학원 강사</li>
           </ul>
         </section>
-
-        <!-- 강의 포트폴리오 -->
         <section>
           <h2 class="text-xl font-bold text-[var(--primary)] mb-3">🗂 강의 포트폴리오</h2>
           <ul class="list-disc list-inside text-gray-800 space-y-1 ml-4">
@@ -122,38 +94,35 @@
       </div>
     </div>
 
-    <!-- 연락처 및 이미지 -->
-    <section class="mt-14 bg-white p-6 rounded-lg shadow">
-      <div class="flex flex-col md:flex-row md:items-start justify-between gap-6 w-full">
-        <!-- 연락처 -->
-        <div class="flex flex-col gap-2 items-start md:w-1/3">
-          <h2 class="text-xl font-bold text-[var(--primary)] flex items-center gap-2">
+    <!-- 연락처 및 강의 이미지 -->
+    <section class="bg-white p-6 rounded-lg shadow">
+      <div class="flex flex-col lg:flex-row gap-8 justify-center items-start">
+        <div class="flex flex-col items-center text-center lg:items-start lg:text-left lg:w-1/3">
+          <h2 class="text-xl font-bold text-[var(--primary)] flex items-center gap-2 mb-2">
             <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" class="w-5 h-5" />
             연락처
           </h2>
-          <div class="flex items-center gap-2">
+          <div class="flex items-center gap-2 mb-2">
             <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="w-5 h-5" />
             <span>etihw88@gmail.com</span>
           </div>
-          <div class="mt-4">
-            <img 
-              src="https://raw.githubusercontent.com/etihw88/intro/main/%EC%A0%9C%EB%AA%A9%EC%9D%84%20%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94_-002.png"
-              alt="QR 코드"
-              class="w-full max-w-[200px] h-auto rounded-lg shadow"
-            />
-          </div>
+          <img
+            src="https://raw.githubusercontent.com/etihw88/intro/main/%EC%A0%9C%EB%AA%A9%EC%9D%84%20%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94_-002.png"
+            alt="QR 코드"
+            class="w-40 h-auto rounded shadow mt-4"
+          />
         </div>
-
-        <!-- 이미지 영역 -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 md:w-2/3">
-          <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250527_190649340.jpg" class="w-full h-auto rounded shadow-md object-cover" />
-          <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250527_220229502.jpg" class="w-full h-auto rounded shadow-md object-cover" />
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center lg:items-start lg:w-2/3">
+          <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250527_190649340.jpg" class="w-full max-w-xs sm:max-w-sm lg:max-w-[300px] rounded shadow object-cover" alt="강의 이미지1" />
+          <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250527_220229502.jpg" class="w-full max-w-xs sm:max-w-sm lg:max-w-[300px] rounded shadow object-cover" alt="강의 이미지2" />
         </div>
       </div>
     </section>
   </div>
 </body>
 </html>
+
+
 
 
 
