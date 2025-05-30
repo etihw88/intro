@@ -9,20 +9,19 @@
     body {
       font-family: 'Noto Sans KR', sans-serif;
     }
-    @media (max-width: 768px) {
-      .mobile-image {
-        width: 100%;
-        height: auto;
+    @media (min-width: 768px) {
+      .match-height {
+        height: 100%;
       }
     }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-  <!-- 소개 + 유튜브 영상 -->
+  <!-- 상단: 소개 + 유튜브 -->
   <div class="max-w-6xl mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
     <!-- 소개 -->
-    <div class="bg-white p-6 rounded-lg shadow flex flex-col justify-center items-center text-center">
+    <div class="bg-white p-6 rounded-lg shadow flex flex-col justify-center items-center text-center match-height">
       <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250517_173349108.jpg" alt="프로필 이미지" class="w-32 h-32 rounded-full shadow mb-4">
       <h1 class="text-3xl font-bold text-blue-900 mb-1">백승리</h1>
       <p class="text-lg text-gray-700 leading-tight">대상자 중심의 교육을</p>
@@ -33,79 +32,80 @@
       </a>
     </div>
 
-    <!-- YouTube 영상 -->
-    <div class="rounded-lg overflow-hidden shadow aspect-video">
+    <!-- 유튜브 -->
+    <div class="rounded-lg overflow-hidden shadow match-height flex items-center justify-center">
       <iframe 
         class="w-full h-full" 
-        src="https://www.youtube.com/embed/R5MrF6ryIgo?autoplay=1&mute=1" 
+        src="https://www.youtube.com/embed/R5MrF6ryIgo?autoplay=1&mute=1"
         title="YouTube Video"
         allow="autoplay; encrypted-media" 
         allowfullscreen
-        style="aspect-ratio: 16 / 9; display: block;">
+        style="aspect-ratio: 16 / 9;">
       </iframe>
     </div>
   </div>
 
-  <!-- 학력 + 경력 / 자격 + 강의 포트폴리오 -->
+  <!-- 중단: 학력~강의포트폴리오 -->
   <div class="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-2 gap-10">
-    <!-- 학력 -->
-    <section>
-      <h2 class="text-xl font-bold text-blue-900 mb-2">🎓 학력</h2>
-      <ul class="list-disc list-inside text-gray-800 ml-4 space-y-1">
-        <li>원주대학 간호과</li>
-        <li>충주대학교 안전공학과</li>
-        <li>연세대학교 보건학석사</li>
-        <li>상지대학교 사회복지학석사</li>
-      </ul>
-    </section>
-
-    <!-- 경력 -->
-    <section>
-      <h2 class="text-xl font-bold text-blue-900 mb-2">🏢 경력</h2>
-      <ul class="list-disc list-inside text-gray-800 ml-4 space-y-1">
-        <li>전) 삼양유가공(주) 보건관리자</li>
-        <li>전) 원주시 보건소 근무(25년)</li>
-        <li>전) 대원과학대학교 보건학 겸임교수</li>
-        <li>현) 우리마더 요양보호사 교육원 강사</li>
-        <li>현) 무실간호학원 강사</li>
-      </ul>
-    </section>
-
-    <!-- 자격 -->
-    <section>
-      <h2 class="text-xl font-bold text-blue-900 mb-2">🧾 자격 및 면허</h2>
-      <ul class="list-disc list-inside text-gray-800 ml-4 space-y-1">
-        <li>간호사 면허</li>
-        <li>보건교사 교원자격증</li>
-        <li>성폭력 전문상담원</li>
-        <li>캐나다 아로마테라피스트 (NAHA)</li>
-        <li>보육교사 1급</li>
-        <li>요양보호사 1급</li>
-        <li>MBTI 일반강사</li>
-        <li>사회복지사 2급</li>
-        <li>일반행정사</li>
-        <li>채용면접관</li>
-        <li>• 직업능력개발훈련교사<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(보건지원, 의료, 산업보건)</li>
-        <li>평생교육사 2급</li>
-      </ul>
-    </section>
-
-    <!-- 강의 포트폴리오 -->
-    <section>
-      <h2 class="text-xl font-bold text-blue-900 mb-2">📚 강의 포트폴리오</h2>
-      <ul class="list-disc list-inside text-gray-800 ml-4 space-y-1">
-        <li>법정 의무교육</li>
-        <li>AI활용 및 디지털 문해교육</li>
-        <li>MBTI교육</li>
-        <li>웰다잉 교육</li>
-        <li>병원동행매니저 교육</li>
-        <li>생활지원사 교육</li>
-        <li>요양보호사 보수교육</li>
-      </ul>
-    </section>
+    <div class="space-y-10">
+      <!-- 학력 -->
+      <section>
+        <h2 class="text-xl font-bold text-blue-900 mb-2 flex items-center gap-2">🎓 학력</h2>
+        <ul class="list-disc list-inside text-gray-800 ml-4 space-y-1">
+          <li>원주대학 간호과</li>
+          <li>충주대학교 안전공학과</li>
+          <li>연세대학교 보건학석사</li>
+          <li>상지대학교 사회복지학석사</li>
+        </ul>
+      </section>
+      <!-- 자격 -->
+      <section>
+        <h2 class="text-xl font-bold text-blue-900 mb-2 flex items-center gap-2">🧾 자격 및 면허</h2>
+        <ul class="list-disc list-inside text-gray-800 ml-4 space-y-1">
+          <li>간호사 면허</li>
+          <li>보건교사 교원자격증</li>
+          <li>성폭력 전문상담원</li>
+          <li>캐나다 아로마테라피스트 (NAHA)</li>
+          <li>보육교사 1급</li>
+          <li>요양보호사 1급</li>
+          <li>MBTI 일반강사</li>
+          <li>사회복지사 2급</li>
+          <li>일반행정사</li>
+          <li>채용면접관</li>
+          <li>• 직업능력개발훈련교사<br>&nbsp;&nbsp;&nbsp;&nbsp;(보건지원, 의료, 산업보건)</li>
+          <li>평생교육사 2급</li>
+        </ul>
+      </section>
+    </div>
+    <div class="space-y-10">
+      <!-- 경력 -->
+      <section>
+        <h2 class="text-xl font-bold text-blue-900 mb-2 flex items-center gap-2">🏢 경력</h2>
+        <ul class="list-disc list-inside text-gray-800 ml-4 space-y-1">
+          <li>전) 삼양유가공(주) 보건관리자</li>
+          <li>전) 원주시 보건소 근무(25년)</li>
+          <li>전) 대원과학대학교 보건학 겸임교수</li>
+          <li>현) 우리마더 요양보호사 교육원 강사</li>
+          <li>현) 무실간호학원 강사</li>
+        </ul>
+      </section>
+      <!-- 포트폴리오 -->
+      <section>
+        <h2 class="text-xl font-bold text-blue-900 mb-2 flex items-center gap-2">📚 강의 포트폴리오</h2>
+        <ul class="list-disc list-inside text-gray-800 ml-4 space-y-1">
+          <li>법정 의무교육</li>
+          <li>AI활용 및 디지털 문해교육</li>
+          <li>MBTI교육</li>
+          <li>웰다잉 교육</li>
+          <li>병원동행매니저 교육</li>
+          <li>생활지원사 교육</li>
+          <li>요양보호사 보수교육</li>
+        </ul>
+      </section>
+    </div>
   </div>
 
-  <!-- 하단부: 이메일 + 이미지 -->
+  <!-- 하단: 이메일 + 이미지 -->
   <div class="max-w-6xl mx-auto px-4 py-10">
     <h2 class="text-lg font-bold text-blue-900 flex items-center gap-2 mb-2">📧 E-MAIL</h2>
     <div class="flex items-center gap-2 text-gray-800 mb-6">
@@ -114,24 +114,19 @@
       </svg>
       <span>etihw88@gmail.com</span>
     </div>
+    <div class="flex justify-center mb-6">
+      <img src="https://raw.githubusercontent.com/etihw88/intro/main/제목을%20입력해주세요_-002.png" alt="QR 코드" class="w-32 md:w-40 object-contain" />
+    </div>
 
-    <!-- 이미지 영역 -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center justify-center">
-      <div class="flex justify-center md:justify-start">
-        <img src="https://raw.githubusercontent.com/etihw88/intro/main/제목을%20입력해주세요_-002.png" alt="QR코드" class="w-40 md:w-44 object-contain" />
-      </div>
-      <div class="flex justify-center">
-        <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250527_190649340.jpg" alt="강의사진1" class="h-44 md:h-48 object-contain w-full md:w-auto" />
-      </div>
-      <div class="flex justify-center">
-        <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250527_220229502.jpg" alt="강의사진2" class="h-44 md:h-48 object-contain w-full md:w-auto" />
-      </div>
+    <!-- 이미지 2개 (모바일과 PC 분기) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+      <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250527_190649340.jpg" alt="강의 이미지1" class="w-full h-auto object-contain rounded-md" />
+      <img src="https://raw.githubusercontent.com/etihw88/intro/main/KakaoTalk_20250527_220229502.jpg" alt="강의 이미지2" class="w-full h-auto object-contain rounded-md" />
     </div>
   </div>
 
 </body>
 </html>
-
 
 
 
